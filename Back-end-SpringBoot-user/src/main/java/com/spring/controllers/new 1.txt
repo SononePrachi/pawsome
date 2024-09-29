@@ -1,0 +1,22 @@
+/*drop procedure if exists p6()
+delimiter $
+create procedure p6(in x int ,in y int)
+Begin
+  if x>=100 and y>=100
+      select x+y;
+ else
+      select "Value must be above 100" as "Message Box";
+  end if
+end $
+delimiter ;
+*/
+
+
+//programs related to table
+drop procedure if exists p6()
+delimiter $
+create procedure p6()
+begin
+   select * from dept;
+end $
+delimiter ;
